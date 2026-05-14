@@ -83,7 +83,7 @@ Start with chat for instant answers. Escalate to investigation only when the pro
    create_investigation(title="<incident>")          ← escalate to deep research (5-8 min)
    Poll get_task + list_journal_records → stream progress
    create_mitigation_plan(task_id) → generate mitigation plans (2-5 min)
-   list_recommendations() → get_recommendation() → generate remediation code
+   list_executions(task_id) → list_journal_records(execution_id, record_type="mitigation_summary_md")
 ```
 
 ---
